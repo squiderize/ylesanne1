@@ -1,0 +1,120 @@
+﻿<Page
+    x:Class="ylesanne1.MainPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:ylesanne1"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d"
+    Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+
+    <Grid>
+
+
+        <Pivot Grid.Row="0">
+            <PivotItem Header="Page1: Memes">
+                <Grid Grid.Row="1">
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="Auto"></ColumnDefinition>
+                        <ColumnDefinition Width="2*"></ColumnDefinition>
+                    </Grid.ColumnDefinitions>
+
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="Auto"></RowDefinition>
+                        <RowDefinition Height="*"></RowDefinition>
+                        <RowDefinition Height="*"></RowDefinition>
+                    </Grid.RowDefinitions>
+
+                    <TextBlock>Page 1 Memes</TextBlock>
+                    <Image Grid.RowSpan="2" Stretch="Fill" Source="/Assets/progmeme2.jpg" Grid.Row="1"></Image>
+                    <Image Stretch="Fill" Source="/Assets/progmeme3.jpg" Grid.Row="1" Grid.Column="1"></Image>
+                    <Image Stretch="Fill" Source="Assets/progmeme1.jpg" Grid.Row="2" Grid.Column="1"></Image>
+
+                </Grid>
+            </PivotItem>
+
+
+            <PivotItem Header="Page2: Lists">
+                <Grid>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="Auto"></ColumnDefinition>
+                        <ColumnDefinition Width="*"></ColumnDefinition>
+                    </Grid.ColumnDefinitions>
+
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="Auto"></RowDefinition>
+                        <RowDefinition Height="*"></RowDefinition>
+                    </Grid.RowDefinitions>
+                    <TextBlock Text="Page2 Lists" Grid.Row="0"></TextBlock>
+
+                    <ListView  Grid.Column="0"></ListView>
+
+                </Grid>
+            </PivotItem>
+
+
+            <PivotItem Header="Page3: Gamez">
+                <Grid>
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="Auto"></RowDefinition>
+                        <RowDefinition Height="*"></RowDefinition>
+                        <RowDefinition Height="*"></RowDefinition>
+                    </Grid.RowDefinitions>
+                    <Button Width="Auto" Height="Auto" Grid.Row="1" HorizontalAlignment="Center" Margin="0,0,0,0" VerticalAlignment="Center">
+                        <Image Stretch="Fill" Source="/Assets/gamez1.jpg"></Image>
+                    </Button>
+
+                    <Grid Grid.Row="2">
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition></ColumnDefinition>
+                            <ColumnDefinition></ColumnDefinition>
+                            <ColumnDefinition></ColumnDefinition>
+                        </Grid.ColumnDefinitions>
+
+                        <Grid Grid.Column="0">
+                            <Grid.RowDefinitions>
+                                <RowDefinition></RowDefinition>
+                                <RowDefinition></RowDefinition>
+                            </Grid.RowDefinitions>
+                            <Button Width="Auto" Height="Auto" Grid.Row="0" HorizontalAlignment="Center" VerticalAlignment="Center">
+                                <Image Stretch="Fill" Source="/Assets/gamez2.jpg"></Image>
+                            </Button>
+                            <Button Width="Auto" Height="Auto" Grid.Row="1" HorizontalAlignment="Center" VerticalAlignment="Center">
+                                <Image Stretch="Fill" Source="/Assets/gamez3.jpg"></Image>
+                            </Button>
+
+                        </Grid>
+
+                        <Grid Grid.Column="1">
+                            <Grid.RowDefinitions>
+                                <RowDefinition></RowDefinition>
+                                <RowDefinition></RowDefinition>
+                            </Grid.RowDefinitions>
+
+                            <Button Width="Auto" Height="Auto" Grid.Row="0" HorizontalAlignment="Center" VerticalAlignment="Center">
+                                <Image Stretch="Fill" Source="/Assets/gamez4.jpg"></Image>
+                            </Button>
+                            
+                            <Button Width="Auto" Height="Auto" Grid.Row="1" HorizontalAlignment="Center" VerticalAlignment="Center">
+                                <Image Stretch="Fill" Source="/Assets/gamez5.jpg"></Image>
+                            </Button>
+                        </Grid>
+                    </Grid>
+
+                </Grid>
+            </PivotItem>
+
+
+            <PivotItem Header="Page4">
+            </PivotItem>
+
+
+            <PivotItem Header="Page5">
+            </PivotItem>
+
+
+        </Pivot>
+
+
+    </Grid>
+</Page>
